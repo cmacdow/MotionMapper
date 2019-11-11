@@ -146,7 +146,8 @@ function [ydata,errors] = tsne_p_sparse(P, parameters, no_dims, relTol)
             
             if isfield(parameters,'signalLabels')
                 if length(ydata(1,:)) == 2
-                    scatter(ydata(:,1),ydata(:,2),[],parameters.signalLabels,'filled')
+%                     scatter(ydata(:,1),ydata(:,2),[],parameters.signalLabels,'filled')
+                    scatter(ydata(:,1),ydata(:,2),[],'filled')
                     axis equal 
                 else
                     scatter3(ydata(:,1),ydata(:,2),ydata(:,3),[],parameters.signalLabels,'filled')

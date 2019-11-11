@@ -17,7 +17,7 @@ function parameters = setRunParameters(parameters)
     %%%%%%%% General Parameters %%%%%%%%
     
     %number of processors to use in parallel code
-    numProcessors = 12;
+    numProcessors = 4;
     
     %whether or not to close the matlabpool after running a routine
     closeMatPool = false;
